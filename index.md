@@ -1,6 +1,7 @@
 <font face="helvetica">
 
 <div><div id="603446273904584399" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><script type="text/javascript">
+
 <!--
 //*********************************************************
 //
@@ -225,12 +226,12 @@ function showResult() {
 	var sameRank = 1;
 	var str = "";
 	var i;
+	
+str += "<table style=\"width:200px; font-size:12px; line-height:120%; margin-left:auto; margin-right:auto; border:1px solid #888888; border-collapse:collapse\" align=\"center\">";
+str += "<tr><td style=\"color:#ffffff; background-color:#888888; text-align:center;\">Rank<\/td><td style=\"color:#ffffff; background-color:#888888; text-align:center;\">Name<\/td><\/tr>";
 
-	str += "<table style=\"width:200px; font-size:12px; line-height:120%; margin-left:auto; margin-right:auto; border:1px solid #888888; border-collapse:collapse\" align=\"center\">";
-	str += "<tr><td style=\"color:#ffffff; background-color:#888888; text-align:center;\">Rank<\/td><td style=\"color:#ffffff; background-color:#888888; text-align:center;\">Name<\/td><\/tr>";
-
-	for (i=0; i<namMember.length; i++) {
-		str += "<tr><td style=\"border:1px solid #888888; width:25px; text-align:right; padding-right:5px;\">"+ranking+"<\/td><td style=\"border:1px solid #888888; width:175px; text-align:center; padding-left:5px;\">"+namMember[lstMember[0][i]]+"<\/td><\/tr>";
+for (i=0; i<namMember.length; i++) {
+	str += "<tr><td style=\"border:1px solid #888888; width:25px; text-align:right; padding-right:5px;\">"+ranking+"<\/td><td style=\"border:1px solid #888888; width:175px; text-align:center; padding-left:5px;\">"+namMember[lstMember[0][i]]+"<\/td><\/tr>";
 		if (i<namMember.length-1) {
 			if (equal[lstMember[0][i]]==lstMember[0][i+1]) {
 				sameRank++;
@@ -242,7 +243,7 @@ function showResult() {
 	}
 	str += "<\/table>";
 
-	document.getElementById("resultField").innerHTML = str;
+document.getElementById("resultField").innerHTML = str;
 }
 
 //Indicates two elements to compare+++++++++++++++++++++++++++++++++++
@@ -250,7 +251,6 @@ function showImage() {
 	var str0 = " Question No."+numQuestion+"<br>"+Math.floor(finishSize*100/totalSize)+"% sorted.<br>";
 	var str1 = ""+toNameFace(lstMember[cmp1][head1]);
 	var str2 = ""+toNameFace(lstMember[cmp2][head2]);
-
 	document.getElementById("battleNumber").innerHTML = str0;
 	document.getElementById("leftField").innerHTML = str1;
 	document.getElementById("rightField").innerHTML = str2;
@@ -332,20 +332,20 @@ a:hover{color:#99ccff;}
 <body text="#000000" bgcolor="#ffffff" link="#0099ff" vlink="#0099ff" alink="#0099ff">
 <table id="mainTable" align="center">
 	<tbody><tr>
-
-		<td id="battleNumber" colspan="3" style="padding-bottom: 10px;" style="text-align:center;">Question No.1<br>0% sorted.</td>
+		
+<td id="battleNumber" colspan="3" style="padding-bottom: 10px;" style="text-align:center;">Question No.1<br>0% sorted.</td>
 	</tr>
 	<tr>
 		<td id="leftField" onclick="if(finishFlag==0)sortList(-1);" rowspan="2" style="text-align:center;"></td>
 		<td class="middleField" onclick="if(finishFlag==0)sortList(0);" style="text-align:center;">
 
-			I Like Both
+		I Like Both
 		</td>
 
-		<td id="rightField" onclick="if(finishFlag==0)sortList(1);" rowspan="2"style="text-align:center;"></td>
+<td id="rightField" onclick="if(finishFlag==0)sortList(1);" rowspan="2"style="text-align:center;"></td>
 	</tr>
 	<tr>
-		<td class="middleField" onclick="if(finishFlag==0)sortList(0);"style="text-align:center;">
+	<td class="middleField" onclick="if(finishFlag==0)sortList(0);"style="text-align:center;">
 			No Opinion
 		</td>
 
