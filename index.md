@@ -116,7 +116,8 @@ function sortList(flag){
 	var str;
 
 	//rec preservation
-	if (flag<0) {
+	
+if (flag<0) {
 		rec[nrec] = lstMember[cmp1][head1];
 		head1++;
 		nrec++;
@@ -165,7 +166,7 @@ function sortList(flag){
 	}
 
 	//Processing after finishing with one list
-	if (head1<lstMember[cmp1].length && head2==lstMember[cmp2].length) {
+if (head1<lstMember[cmp1].length && head2==lstMember[cmp2].length) {
 		//List the remainder of cmp2 copies, list cmp1 copies when finished scanning
 		while (head1<lstMember[cmp1].length){
 			rec[nrec] = lstMember[cmp1][head1];
@@ -186,7 +187,7 @@ function sortList(flag){
 
 	//When it arrives at the end of both lists
 	//Update a pro list
-	if (head1==lstMember[cmp1].length && head2==lstMember[cmp2].length) {
+if (head1==lstMember[cmp1].length && head2==lstMember[cmp2].length) {
 		for (i=0; i<lstMember[cmp1].length+lstMember[cmp2].length; i++) {
 			lstMember[parent[cmp1]][i] = rec[i];
 		}
@@ -198,7 +199,7 @@ function sortList(flag){
 		head2 = 0;
 
 		//Initialize the rec before performing the new comparison
-		if (head1==0 && head2==0) {
+if (head1==0 && head2==0) {
 			for (i=0; i<namMember.length; i++) {
 				rec[i] = 0;
 			}
@@ -206,11 +207,11 @@ function sortList(flag){
 		}
 	}
 
-	if (cmp1<0) {
+if (cmp1<0) {
 		str = "Question No."+(numQuestion-1)+"<br>"+Math.floor(finishSize*100/totalSize)+"% sorted.";
 		document.getElementById("battleNumber").innerHTML = str;
 
-		showResult();
+showResult();
 		finishFlag = 1;
 	}
 	else {
@@ -255,7 +256,7 @@ function showImage() {
 	document.getElementById("leftField").innerHTML = str1;
 	document.getElementById("rightField").innerHTML = str2;
 
-	numQuestion++;
+numQuestion++;
 }
 
 //Convert numeric value into a name (emoticon)+++++++++++++++++++++++++++++++
@@ -265,7 +266,7 @@ function toNameFace(n){
 	//Exclude the following comment when adding an emoticon
 	//Warning not to contradict an indext of namMember
 	/*
-	str += "<br>&#9472;&#9472;&#9472;&#9472;<br>";
+str += "<br>&#9472;&#9472;&#9472;&#9472;<br>";
 	switch(n) {
 		//case -1 Because it is a sample, delete it
 		case -1: str+="&#65288; ｴ&#8704;&#65344;&#65289;";break;
@@ -282,6 +283,7 @@ function toNameFace(n){
  When changing the style of the list, please edit here. 
 **********************************************************/
 //&#65328;&#12468;&#12471;&#12483;&#12463;=P Gothic
+
 #mainTable{
 	font-size: 16px;
 	font-family: 'helvetica',sans-serif;
@@ -310,11 +312,13 @@ function toNameFace(n){
 }
 //-->
 <!--
+
 A{
   text-decoration : none;
 }
 -->
 <!--
+
 a:hover{color:#99ccff;}
 -->
 </style>
