@@ -11,6 +11,7 @@
 // Please don't put a comma at the end though.
 //
 //*********************************************************
+
 var namMember = new Array(
     "Admiral (Cranky Bird)",
     "Agent S (Peppy Squirrel)",
@@ -21,19 +22,19 @@ var namMember = new Array(
     "Alli (Snooty Alligator)",
     "Amelia (Snooty Eagle)",
     "Annabelle (Peppy Anteater)",
-"Anchovy (Lazy Bird)",
-"Ankha (Snooty Cat)",
-"Angus (Cranky Bull)",
-"Anicotti (Peppy Mouse)",
-"Annalisa (Normal Anteater)",
-"Annalise (Snooty Horse)",
-"Antonio (Jock Anteater),
-"Apollo (Cranky Eagle)",
-"Apple (Peppy Hamster)",
-"Astrid (Snooty Kangaroo)",
-"Audie (Peppy Wolf)",
-"Zucker (Lazy Octopus)"
-);
+    "Anchovy (Lazy Bird)", 
+    "Ankha (Snooty Cat)",
+    "Angus (Cranky Bull)",
+    "Anicotti (Peppy Mouse)",
+    "Annalisa (Normal Anteater)",
+    "Annalise (Snooty Horse)",
+    "Antonio (Jock Anteater),
+    "Apollo (Cranky Eagle)",
+    "Apple (Peppy Hamster)",
+    "Astrid (Snooty Kangaroo)",
+    "Audie (Peppy Wolf)",
+    "Zucker (Lazy Octopus)"
+    );
 //*********************************************************
 
 var lstMember = new Array();
