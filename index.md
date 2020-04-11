@@ -12,43 +12,27 @@
 //
 //*********************************************************
 var namMember = new Array(
-"Royals/Political Marriage Turns Into Feelings",
-"Adopting/Raising a Baby",
-"Fairy Tale/Mythology AU",
-"Coffee House AU/Food Service AU",
-"'Everyone is Evil'/Mirrorverse AU",
-"'They All Work In An Office' AU",
-"High School/University AU",
-"They Break Up (but then They Get Back Together)",
-"Enemies to Friends to Lovers",
-"Unusually Specific Occupation AU, Like, The Author Clearly Has The Same Job",
-"Fake Dating/Fake Marriage Accidentally Turns Into Feelings",
-"Soulmate Identifying Marks (Tattoo, Red Thread of Fate, etc)",
-"Seemingly Unrequited Pining",
-"Actually Unrequited Pining",
-"Characters Swap Roles AU (I don't mean in the bedroom)",
-"'Falling For A Coworker/Teammate Is A Bad Idea' Except This Is Fiction So It Works Out",
-"And They Were Roommates!",
-"Amnesia Fic",
-"Hurt/Comfort",
-"Body Swapping",
-"Hogwarts AU",
-"Daemons",
-"Accidentally Fell In Love With The Mission Target",
-"Polyamory",
-"'Groundhog Day'/Karmic Time Loop",
-"Reincarnation/'25 Lives' AU",
-"Snowed-In Cabin/Isolated Together For Extended Period of Time",
-"A/B/O",
-"Pride and Prejudice AU",
-"Found Families",
-"Friends to Lovers",
-"Loyalty Kink",
-"Selfcest (possibly due to time travel)",
-"Vampires/Werewolves AU",
-"Supernatural Creature/Human Romance",
-"Magical Connection (Telepathy, etc)",
-"Hot Single Parent(s)"
+    "Admiral (Cranky Bird)",
+    "Agent S (Peppy Squirrel)",
+    "Agnes (Sisterly Pig)",
+    "Al (Lazy Gorilla)",
+    "Alfonso (Lazy Alligator)",
+    "Alice (Normal Koala)",
+    "Alli (Snooty Alligator)",
+    "Amelia (Snooty Eagle)",
+    "Annabelle (Peppy Anteater)",
+"Anchovy (Lazy Bird)",
+"Ankha (Snooty Cat)",
+"Angus (Cranky Bull)",
+"Anicotti (Peppy Mouse)",
+"Annalisa (Normal Anteater)",
+"Annalise (Snooty Horse)",
+"Antonio (Jock Anteater),
+"Apollo (Cranky Eagle)",
+"Apple (Peppy Hamster)",
+"Astrid (Snooty Kangaroo)",
+"Audie (Peppy Wolf)",
+"Zucker (Lazy Octopus)"
 );
 //*********************************************************
 
@@ -294,9 +278,7 @@ function toNameFace(n){
 <style type="text/css">
 <!--
 /**********************************************************
-
  When changing the style of the list, please edit here. 
-
 **********************************************************/
 //&#65328;&#12468;&#12471;&#12483;&#12463;=P Gothic
 #mainTable{
