@@ -1,7 +1,6 @@
 <font face="helvetica">
 
 <div><div id="603446273904584399" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><script type="text/javascript">
-
 <!--
 //*********************************************************
 //
@@ -54,20 +53,19 @@ var finishFlag;
 //The initialization of the variable+++++++++++++++++++++++++++++++++++++++++++++
 function initList(){
     var n = 0;
-	var mid;
-	var i;
-
-	//The sequence that you should sort
-	lstMember[n] = new Array();
-	for (i=0; i<namMember.length; i++) {
-		lstMember[n][i] = i;
-	}
-	parent[n] = -1;
-	totalSize = 0;
-	n++;
-
-	for (i=0; i<lstMember.length; i++) {
-		//And element divides it in two/more than two
+    var mid;
+    var i;
+    //The sequence that you should sort
+    lstMember[n] = new Array();
+    for (i=0; i<namMember.length; i++) {
+    	lstMember[n][i] = i;
+    }
+    parent[n] = -1;
+    totalSize = 0;
+    n++;
+    
+   for (i=0; i<lstMember.length; i++) {
+    	//And element divides it in two/more than two
 		//Increase divided sequence of last in first member
 		if(lstMember[i].length>=2) {
 			mid = Math.ceil(lstMember[i].length/2);
@@ -84,26 +82,26 @@ function initList(){
 		}
 	}
 
-	//Preserve this sequence
+//Preserve this sequence
 	for (i=0; i<namMember.length; i++) {
 		rec[i] = 0;
 	}
 	nrec = 0;
 
-	//List that keeps your results
-	//Value of link initial
-	// Value of link initial
-	for (i=0; i<=namMember.length; i++) {
-		equal[i] = -1;
-	}
+//List that keeps your results
+//Value of link initial
+// Value of link initial
+for (i=0; i<=namMember.length; i++) {
+	equal[i] = -1;
+}
 
-	cmp1 = lstMember.length-2;
-	cmp2 = lstMember.length-1;
-	head1 = 0;
-	head2 = 0;
-	numQuestion = 1;
-	finishSize = 0;
-	finishFlag = 0;
+cmp1 = lstMember.length-2;
+cmp2 = lstMember.length-1;
+head1 = 0;
+head2 = 0;
+numQuestion = 1;
+finishSize = 0;
+finishFlag = 0;
 }
 
 //&#12522;&#12473;&#12488;&#12398;&#12477;&#12540;&#12488;+++++++++++++++++++++++++++++++++++++++++++
@@ -115,8 +113,8 @@ function sortList(flag){
 	var i;
 	var str;
 
-	//rec preservation
 	
+//rec preservation	
 if (flag<0) {
 		rec[nrec] = lstMember[cmp1][head1];
 		head1++;
@@ -185,8 +183,8 @@ if (head1<lstMember[cmp1].length && head2==lstMember[cmp2].length) {
 		}
 	}
 
-	//When it arrives at the end of both lists
-	//Update a pro list
+//When it arrives at the end of both lists
+//Update a pro list
 if (head1==lstMember[cmp1].length && head2==lstMember[cmp2].length) {
 		for (i=0; i<lstMember[cmp1].length+lstMember[cmp2].length; i++) {
 			lstMember[parent[cmp1]][i] = rec[i];
@@ -198,9 +196,9 @@ if (head1==lstMember[cmp1].length && head2==lstMember[cmp2].length) {
 		head1 = 0;
 		head2 = 0;
 
-		//Initialize the rec before performing the new comparison
-if (head1==0 && head2==0) {
-			for (i=0; i<namMember.length; i++) {
+//Initialize the rec before performing the new comparison
+	if (head1==0 && head2==0) {
+		for (i=0; i<namMember.length; i++) {
 				rec[i] = 0;
 			}
 			nrec = 0;
@@ -212,7 +210,7 @@ if (cmp1<0) {
 		document.getElementById("battleNumber").innerHTML = str;
 
 showResult();
-		finishFlag = 1;
+finishFlag = 1;
 	}
 	else {
 		showImage();
@@ -252,9 +250,10 @@ function showImage() {
 	var str0 = " Question No."+numQuestion+"<br>"+Math.floor(finishSize*100/totalSize)+"% sorted.<br>";
 	var str1 = ""+toNameFace(lstMember[cmp1][head1]);
 	var str2 = ""+toNameFace(lstMember[cmp2][head2]);
-	document.getElementById("battleNumber").innerHTML = str0;
-	document.getElementById("leftField").innerHTML = str1;
-	document.getElementById("rightField").innerHTML = str2;
+	
+document.getElementById("battleNumber").innerHTML = str0;
+document.getElementById("leftField").innerHTML = str1;
+document.getElementById("rightField").innerHTML = str2;
 
 numQuestion++;
 }
@@ -282,8 +281,8 @@ str += "<br>&#9472;&#9472;&#9472;&#9472;<br>";
 /**********************************************************
  When changing the style of the list, please edit here. 
 **********************************************************/
-//&#65328;&#12468;&#12471;&#12483;&#12463;=P Gothic
 
+//&#65328;&#12468;&#12471;&#12483;&#12463;=P Gothic
 #mainTable{
 	font-size: 16px;
 	font-family: 'helvetica',sans-serif;
@@ -342,15 +341,14 @@ a:hover{color:#99ccff;}
 	<tr>
 		<td id="leftField" onclick="if(finishFlag==0)sortList(-1);" rowspan="2" style="text-align:center;"></td>
 		<td class="middleField" onclick="if(finishFlag==0)sortList(0);" style="text-align:center;">
-
-		I Like Both
+I Like Both
 		</td>
 
 <td id="rightField" onclick="if(finishFlag==0)sortList(1);" rowspan="2"style="text-align:center;"></td>
 	</tr>
 	<tr>
 	<td class="middleField" onclick="if(finishFlag==0)sortList(0);"style="text-align:center;">
-			No Opinion
+No Opinion
 		</td>
 
 	</tr>
@@ -369,4 +367,7 @@ a:hover{color:#99ccff;}
 </div><div><br>
 <div align="center">
 <a href ="https://animalcrossing.fandom.com/wiki/Villager_list_(New_Horizons)">villager reference</a> / 
-<a href="http://ampora.tumblr.com/post/141980407546/sorry-this-has-probably-already-been-asked-i-was">inspiration</a> / <a href="http://infinitexo.weebly.com/ori.html">code credit</a></p>
+	
+<a href="http://ampora.tumblr.com/post/141980407546/sorry-this-has-probably-already-been-asked-i-was">inspiration</a> /
+
+<a href="http://infinitexo.weebly.com/ori.html">code credit</a></p>
