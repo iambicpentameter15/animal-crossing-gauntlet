@@ -380,4 +380,6 @@ a:hover{color:#99ccff;}
 </script></div>
 
 </div><div><br>
-<div align="center"><a href="http://ampora.tumblr.com/post/141980407546/sorry-this-has-probably-already-been-asked-i-was">ULTIMATE FANFIC TROPE SHOWDOWN v3.1</a> / <a href="http://infinitexo.weebly.com/ori.html">code credit</a> / <a href="https://yuletide-coal.dreamwidth.org/2482.html?replyto=8626098">stop asking what</a> <a href="https://yuletide-coal.dreamwidth.org/2482.html?replyto=8625074">loyalty kink is</a></a></a><br><p>updated 10/2018. for best results, try not to use "i like both" or "no opinion"</p>
+<div align="center">
+<a href ="https://animalcrossing.fandom.com/wiki/Villager_list_(New_Horizons)">villager reference</a> / 
+<a href="http://ampora.tumblr.com/post/141980407546/sorry-this-has-probably-already-been-asked-i-was">inspiration</a> / <a href="http://infinitexo.weebly.com/ori.html">code credit</a></p>
